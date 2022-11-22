@@ -1,0 +1,28 @@
+<div>
+    <h3>ADD LAPTOP BRAND</h3>
+    <hr/>
+    <div>
+    <form (ngSubmit)="onsubmit()">
+        <div>
+            <label> Id</label>
+            <input type="text" id="id" class="form-control" [(ngModel)]="brand.id" name="id">
+            </div>
+            <div>
+                <label>BRAND NAME</label>
+                <input type="text" id="brandname" class="form-control"[(ngModel)]="brand.name" name="brandname">
+            </div>
+            <div>
+                <label>BRAND CODE</label>
+                <input type="text" id="brandcode" class="form-control"[(ngModel)]="brand.brandcode" name="brandcode">
+            </div>
+            <div>
+                <label>Status</label>
+                    <input type="checkbox" id="status" name="status" [(ngModel)]="brand.status">
+            </div>
+            <br />
+            <button type="submit">Add BRAND</button>
+        
+    </form>
+  </div>
+</div>  
+

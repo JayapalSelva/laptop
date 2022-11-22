@@ -1,0 +1,11 @@
+form{
+    width: 500px;
+    padding: 20px;
+    color: blue;
+    background-color:rgb(149, 202, 238);
+    border: 1px solid black;
+    margin-left: 10px;
+    border-radius: 20px;
+    margin: auto;
+}
+

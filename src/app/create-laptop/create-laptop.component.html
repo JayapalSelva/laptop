@@ -1,0 +1,36 @@
+
+<div>
+    <h3>ADD LAPTOP</h3>
+    <hr/>
+    <div>
+    <form (ngSubmit)="onSubmit()">
+        <div>
+            
+            <label> Id</label>
+            <input type="text" id="id" class="form-control" [(ngModel)]="laptop.id" name="id">
+            </div>
+            <div>
+                <label>brand : </label>
+               <select class="dropdown"  [(ngModel)]="laptop.brand" name="brand"  >
+                <option value="0">select</option>
+
+                <option *ngFor="let jayapal of activebrands" > {{ jayapal}} </option>
+
+               </select>
+            </div>
+
+            <div>
+                <label>ram</label>
+                <input type="text" id="ram" class="form-control"[(ngModel)]="laptop.ram" name="ram">
+            </div>
+            <div>
+                <label>color</label>
+                <input type="text" id="color" class="form-control"[(ngModel)]="laptop.color" name="color">
+            </div>
+            <br />
+       
+            <button type="submit">Add</button>
+        
+    </form>
+  </div>
+</div>  

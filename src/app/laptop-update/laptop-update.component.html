@@ -1,0 +1,27 @@
+<div>
+    <h3>Update LAPTOP</h3>
+    <hr/>
+    <div>
+    <form (ngSubmit)="onSubmit()">
+        <div>
+            <label> Id</label>
+            <input type="text" id="id" class="form-control" [(ngModel)]="laptop.id" name="id" value="{{laptop.id}}" readonly>
+            </div>
+            <div>
+                <label>brand</label>
+                <input type="text" id="brand" class="form-control"[(ngModel)]="laptop.brand" name="brand" value="{{laptop.brand}}">
+            </div>
+            <div>
+                <label>ram</label>
+                <input type="text" id="ram" class="form-control"[(ngModel)]="laptop.ram" name="ram" value="{{laptop.ram}}">
+            </div>
+            <div>
+                <label>color</label>
+                <input type="text" id="color" class="form-control"[(ngModel)]="laptop.color" name="color" value="{{laptop.color}}">
+            </div>
+            <br />
+            <button type="submit">Update</button>
+        
+    </form>
+  </div>
+</div>  
